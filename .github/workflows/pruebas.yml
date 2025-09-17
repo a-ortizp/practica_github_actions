@@ -7,6 +7,8 @@ jobs:
     name: Pruebas
     runs-on: ubuntu-latest
     steps:
+    - name: Verificar versión de Python
+      run: python --version
     - name: Checkout de repositorio
       uses: actions/checkout@v3
     - name: Configuración de entorno de python
